@@ -1,6 +1,5 @@
 import ScoreCountCard from "./ScoreCountCard"
 import Button from "./Button"
-import { useState } from "react"
 const ScoreCard = ({ teamName, score, handleClick }) => {
 
 
@@ -9,9 +8,9 @@ const ScoreCard = ({ teamName, score, handleClick }) => {
             <h2 className="text-3xl font-bold font-poppins">{teamName}</h2>
             <ScoreCountCard score={score} />
             <div className="flex gap-4">
-                <Button text={1} handleClick={() => handleClick(1)} />
-                <Button text={2} handleClick={() => handleClick(2)} />
-                <Button text={3} handleClick={() => handleClick(3)} />
+                <Button value={1} handleClick={() => handleClick(1)} />
+                <Button value={2} handleClick={() => handleClick(2)} />
+                <Button value={3} handleClick={() => handleClick(3)} />
             </div>
 
         </div>
